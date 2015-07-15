@@ -1,0 +1,7 @@
+<html>
+<head> First Homework
+</head>
+<title> Assignment </title>
+<body>
+<input type="number" name="number">
+</body>
