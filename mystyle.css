@@ -5,4 +5,15 @@ color:purple;
 #paraId
 {
 	color:Green;
+	text-transform: uppercase;
+	font-family:"Times New Roman", serif;
+}
+.mypre
+{
+	background :red;
+	border-radius: 5px;
+}
+#personalId
+{
+	background-image: url("http://a.abcnews.com/images/Technology/ht_windows_kab_150625_16x9_992.jpg");
 }
