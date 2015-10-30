@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Digital clock</title>
+</head>
+<body>
+<div id="clockDisplay" class="clockStyle">
+	<script type="text/javascript">
+function liveTime()
+{ 
+	var currentTime = new Date();
+	var dur = "Am";
+	var h = currentTime.getHours();
+	var m = currentTime.getMinutes();
+	var s = currentTime.getSeconds();
+	
+	if(h==0)
+	{
+h=12;
+	}else if(h>12){
+		h=h-12;
+		dur = "Pm";
+	}
+	if(h<10){
+h= "0"+ h;
+	}
+	if(m<10){
+m= "0"+ m;
+}
+if(s<10){
+s= "0"+ s;
+}
+
+var myClock = document.getElementById('clockDisplay');
+myClock.textContent = h + ":" + m +":" + s + " " + dur;
+myClock.innerText = h + ":" + m +":" + s+ " " + dur;
+setTimeout('liveTime()',1000);
+}
+liveTime();
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>temp</title>
+</head>
+
+<body>
+<p id="demo"></p>
+<button onclick="myDay()">try</button>
+<script>
+
+var text;
+switch (new Date().getDay()){
+	case 1:
+	text="today is sunday";
+	break;
+	case 2:
+	text="today is monday";
+	break;
+	default:
+	text="I am wednesday";
+}
+		document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
